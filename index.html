@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Lawyer</title>
 </head>
 <style>
 
@@ -49,42 +50,215 @@
         margin: 1.5em 0em;
     }
 
+    .practice-areas .seperator:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 100px;
+        height: 1px;
+        background: #cca876;
+        margin-left: -50px;
+    }
+
+    .clients .seperator:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 100px;
+        height: 1px;
+        background: #cca876;
+        margin-left: -50px;
+    }
+    
+    .attorneys .seperator:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 100px;
+        height: 1px;
+        background: #cca876;
+        margin-left: -50px;
+    }
+
+    .aboutus .seperator:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 100px;
+        height: 1px;
+        background: #cca876;
+        margin-left: -50px;
+    }
+
+    .free-consultation .seperator:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 100px;
+        height: 1px;
+        background: #cca876;
+        margin-left: -50px;
+    }
+
+    .home{
+        background-image: url('bg1.jpg');width:100%;height:580px; background-size: cover; background-position: center;
+    }
+
+    .home .content{
+        height:200px;position: relative;top:250px; width: 330px;margin: auto;
+    }
+
+    .home .content .heading {
+        color:#cca876; font-size: 24px;
+    }
+
+    .home .content .subheading{
+        color:#fff; font-size: 36px; font-weight: 700; display: inline-block;margin-top: 10px;
+    }
+
+    .home .content .free-consultation {
+        border: 0.3em solid #cca876;margin-top: 15px;text-align: center;width: 80%;
+    }
+
+    .home .content .free-consultation .btn {
+        display: inline-block;padding: 1em 1em;color:#cca876;
+    }
+
+    .achieved-numbers ul{
+        list-style: none; border: 1px solid #ededed; position: relative;margin-top: -40px;background-color: #fff;
+    }
+
+    .achieved-numbers ul li:not(:last-child){
+        border-right: 1px solid #cbc9c9;
+    }
+
+    .practice-areas{
+        margin: 60px 0px;text-align: left;
+    }
+
+    .practice-areas .icon{
+        margin-bottom: 20px;
+    }
+
+    .attorneys{
+        margin: 80px 0px;text-align: center
+    }
+
+    .attorneys .attorney{
+        text-align: left;
+    }
+
+    .aboutus .content ul li{
+        padding:20px 0px;
+    }
+
+    .aboutus .content ul li .text{
+        padding: 0px 10px;
+        width: 500px;
+    }
+
+    .aboutus .content ul li .text .main{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .aboutus .about-firm{
+        margin: 60px 0px;
+    }
+
+    .aboutus .content ul li .bullet{
+        border-top: 1px solid #cca876;
+        width: 15px;
+        margin-top: 15px;
+        vertical-align: top;
+    }
+
+    .aboutus .content ul li span{
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 475px) {
+
+        .achieved-numbers ul li{
+            border-right: 0px solid #cbc9c9 !important;
+            border-bottom: 1px solid #cbc9c9;
+            padding: 10px 0px;
+        }
+        .achieved-numbers{
+            text-align: center;
+        }
+        .achieved-numbers ul{
+            border: 0px;margin-top: 0px;padding: 20px 40px;
+        }
+        .practice-areas{
+            text-align: center;
+        }
+        .practice-areas .practice{
+            margin-bottom: 60px;
+        }
+        .practice-areas .icon img{
+            padding-left: 40px;
+        }
+        .attorneys .attorney{
+            margin-bottom: 60px;
+        }
+        .aboutus .content ul li .text{
+            text-align: center;
+        }
+        .aboutus .content ul li .text{
+            width: 100%;
+        }
+
+	}
+
 </style>
 <body style="-webkit-tap-highlight-color: transparent;padding: 0px;margin: 0px;">
     <section class="header"  style="color: background .3s ease;box-shadow: 0 2px 2px 0 rgba(0,0,0,.04);">
-        <div class="top-header" style="border-bottom: solid 1px #ededed;">
+        <div class="top-header hidden-xs hidden-sm" style="border-bottom: solid 1px #ededed;">
             <div class="container">
                 <div class="row" style="padding: 0.6em 0em">
-                    <div style="float:left"><span style="color: #cbc9c9; font-size: 12px;">CALL US:</span> <span style="color: #cca876;">+91 9582582392</span></div>
-                    <div style="float:right"><span style="color: #cca876; font-size: 12px">REQUEST A FREE CONSULTATION</span></div>
+                    <div class="col-xs-12">
+                        <div style="float:left"><span style="color: #cbc9c9; font-size: 12px;">CALL US:</span> <span style="color: #cca876;">+91 9582582392</span></div>
+                        <div style="float:right"><span style="color: #cca876; font-size: 12px">REQUEST A FREE CONSULTATION</span></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="main-header">
+        <div class="main-header hidden-xs hidden-sm" >
             <div class="container">
                 <div class="row" style="padding: 0.5em 0em">
-                <div class="logo" style="float:left"></div>
-                <div class="main-menu" style="float:right">
-                    <ul style="list-style: none;">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Practice Areas</a></li>
-                        <li><a href="">Contacts</a></li>
-                    </ul>
-                </div>
+                    <div class="col-xs-12">
+                        <div class="logo" style="float:left"></div>
+                        <div class="main-menu" style="float:right">
+                            <ul style="list-style: none;">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Practice Areas</a></li>
+                                <li><a href="">Attorneys</a></li>
+                                <li><a href="">Clients</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home" style="background-image: url('bg1.jpg');width:100%;height:580px; background-size: cover; background-position: center;">
+    <section class="home">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <div style="width: 400px; height:200px;position: relative;top:250px; left:60px">
-                                <span style="color:#cca876; font-size: 24px;">WITH Sanjeev Chopra & Associates</span></br>
-                                <span style="color:#fff; font-size: 36px; font-weight: 700; display: inline-block;margin-top: 10px;padding-left: 10px;">EVERY CLIENT MATTERS</span> 
-                                <div style="border: 0.3em solid #cca876;margin-top: 15px;text-align: center;width: 80%;">
-                                    <span style="display: inline-block;padding: 1em 1em;color:#cca876">REQUEST A FREE CONSULTATION</span>
+                        <div class="col-lg-12">
+                            <div class="content">
+                                <span class="heading">WITH </br> Sanjeev Chopra & Associates</span></br>
+                                <span class="subheading">EVERY CLIENT MATTERS</span> 
+                                <div class="free-consultation">
+                                    <span class="btn">REQUEST A FREE CONSULTATION</span>
                                 </div>
                             </div>
                         </div>
@@ -92,24 +266,26 @@
                 </div>
                 <div style="clear: both;"></div>
     </section>
+
+    
     <section class="achieved-numbers">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <ul style="list-style: none; border: 1px solid #ededed; position: relative;margin-top: -40px;background-color: #fff;">
-                        <li style="border-right: 1px solid #cbc9c9;">
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
                             <a href="">
                                 <span style="color:#333;display: inline-block;">1700+</span></br>
                                 <span style="color:#cca876;display: inline-block; margin-top: 7px;font-size: 12px;">TRUSTED CLIENTS</span>
                             </a>
                         </li>
-                        <li style="border-right: 1px solid #cbc9c9;">
+                        <li>
                             <a href="">
                                 <span style="color:#333;display: inline-block;">180 000 000</span></br>
                                 <span style="color:#cca876;display: inline-block; margin-top: 7px;font-size: 12px;">RECOVERED FOR OUR CLIENTS</span>
                             </a>
                         </li>
-                        <li style="border-right: 1px solid #cbc9c9;">
+                        <li>
                             <a href="">
                                 <span style="color:#333;display: inline-block;">98%</span></br>
                                 <span style="color:#cca876;display: inline-block; margin-top: 7px;font-size: 12px;">SUCCESSFUL CASES</span>
@@ -126,88 +302,407 @@
             </div>
         </div>
     </section>
-    <section class="practice-areas" style="margin: 60px 0px;">
+
+    <section class="aboutus" style="margin-bottom: 60px; margin-top: 60px;">
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
-                            <div class="" style="text-align: left;margin-bottom: 20px;">
-                                <img src="familyicon.png">
+                <div class="col-lg-12">
+                    <h2 style="text-align: center;">ABOUT US</h2>
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 50px;margin-top: 15px;">
+                    </div>
+                    <h4 style="text-align: center;line-height: 26px;">
+                        <span style="color: #cca876; font-size: 700; font-size: 17px;">Sanjeev Chopra & Associates</span> is the preferred choice of the leading companies across india and provides meaningful, long term solutions to companies needing to do more with less in today's challenging environment.
+                    </h4>
+
+
+                    
+
+
+                    <div class="row about-firm">
+
+                        <div class="col-lg-6">
+                            <div class="content">
+                                <ul style="list-style: none;padding: 0px;">
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">We advise multinational companies </span> </br>
+                                            <span class="info">To deal with critical legal issues plaguing the industries</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">We are young generation team of dedicated professionals</span>  </br>
+                                            <span class="info">Willing to go extra mile for mission critical deliveries</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">We're business-oriented lawyers</span> </br>
+                                            <span class="info">Equally comfortable in the boardroom and the courtroom</span>
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="seperator" style="height: 4px; border-bottom: 1px solid #ededed;border-top: 1px solid #ededed;"></div>
-                            <div>
-                                <h4 style="margin-top: 1.5em;color:#4a4f55">Family Law</h4>
-                                <p style="margin-top: 1.5em;">nenrfnenfre vjf</p>
-                                <div style="margin-top: 2em;"><a style="color: #cca876; font-size: 12px;" href="">Read More</a></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row" style="background-image: url(india.jpg);height: 250px;background-size: cover;">
+                                <div class="col-lg-12" style="background-color: rgba(0,0,0,.4);width: 50%; height: 100%;padding: 40px 20px;">
+                                    <p style="color: #fff;">
+                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;">Our Services Extend Across India </br></span> 
+                                        <span style="display: block;color:#cca876; font-size: 17px;">Sanjeev Chopra & Associate </br></span>
+                                        <span style="font-size: 16px;">Strategic Legal Counsel </br></span>
+                                        <span style="font-size: 16px;">Law Firm</span>
+                                    </p>
+                                </div>
                             </div>
-                </div>
-                <div class="col-xs-3">
-                        <div class="" style="text-align: left;margin-bottom: 20px;">
-                            <img src="businessicon.png">
                         </div>
-                        <div class="seperator" style="height: 4px; border-bottom: 1px solid #ededed;border-top: 1px solid #ededed;"></div>
-                        <div>
-                            <h4 style="margin-top: 1.5em;color:#4a4f55">Family Law</h4>
-                            <p style="margin-top: 1.5em;">nenrfnenfre vjf</p>
-                            <div style="margin-top: 2em;"><a style="color: #cca876; font-size: 12px;" href="">Read More</a></div>
+                    </div>
+
+                    
+
+                    <div class="row supporting-business"  style="margin-top: 60px;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="caption" style="margin-bottom: 20px; padding-left: 20px; font-size: 20px;">Supporting Your Business</div>
+                            </div>
                         </div>
-                </div>
-                <div class="col-xs-3">
-                        <div class="" style="text-align: left;margin-bottom: 20px;">
-                            <img src="estatesicon.png">
+                        <div class="col-lg-6">
+                            <div class="row" style="background-image: url(business.jpg);height: 320px;background-size: cover;background-repeat: no-repeat;background-position: left;">
+                                <div class="col-lg-12" style="width: 50%; height: 100%;padding:20px;">
+                                    <p style="color: #fff;">
+                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
+                                        
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="seperator" style="height: 4px; border-bottom: 1px solid #ededed;border-top: 1px solid #ededed;"></div>
-                        <div>
-                            <h4 style="margin-top: 1.5em;color:#4a4f55">Family Law</h4>
-                            <p style="margin-top: 1.5em;">nenrfnenfre vjf</p>
-                            <div style="margin-top: 2em;"><a style="color: #cca876; font-size: 12px;" href="">Read More</a></div>
+                        <div class="col-lg-6" style="background-color: rgba(0,0,0,0.1);padding-left: 30px;">
+                            <div class="content" style="padding: 30px 0px">
+                                <ul style="list-style: none;padding: 0px;">
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Our Approach </span> </br>
+                                            <span class="info">Our balanced approach to legal matters enables our clients to realize performance and savings gains at levels traditionally not possible with captive units, consultancies or outsourcing companies.</span>
+                                        </span>
+                                    </li>
+                                    
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Our proven
+                                                methodology  </span> </br>
+                                            <span class="info">Our proven
+                                                methodology enables us to understand your legal and
+                                                business needs and design solutions that drive
+                                                efficiency and effectiveness with results. </span> 
+                                               
+                                        </span>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
                         </div>
-                </div>
-                <div class="col-xs-3">
-                        <div class="" style="text-align: left;margin-bottom: 20px;">
-                            <img src="civillitigationicon.png">
+                        
+                    </div>
+
+                    <div class="row choose-us" style="margin-top: 60px">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="caption" style="margin-bottom: 20px; padding-left: 20px; font-size: 20px;">Work With Us</div>
+                            </div>
                         </div>
-                        <div class="seperator" style="height: 4px; border-bottom: 1px solid #ededed;border-top: 1px solid #ededed;"></div>
-                        <div>
-                            <h4 style="margin-top: 1.5em;color:#4a4f55">Family Law</h4>
-                            <p style="margin-top: 1.5em;">nenrfnenfre vjf</p>
-                            <div style="margin-top: 2em;"><a style="color: #cca876; font-size: 12px;" href="">Read More</a></div>
+                        <div class="col-lg-6" style="background-color: rgba(0,0,0,0.1);;padding-left: 30px;">
+                            <div class="content" style="padding: 30px 0px">
+                                <ul style="list-style: none;padding: 0px;">
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Experienced and seasoned Lawyers</span> </br>
+                                            <span class="info">Across the country</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Innovative solution </span>  </br>
+                                            <span class="info">For routine legal
+                                                and business issues</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">In-depth and holistic analysis </span> </br>
+                                                <span class="info">Of complex
+                                                    issues</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Significant investment</span></br>
+                                                <span class="info">In research,
+                                                    technology and CRM</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet  hidden-xs hidden-sm"></span>
+                                        <span class="text">
+                                            <span class="main">Management
+                                                team</span></br>
+                                            <span class="info"> Domain centeric and proven</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                </div>
+
+                        <div class="col-lg-6">
+                            <div class="row" style="background-image: url(differentiator.jpg);height: 500px;background-size: cover;background-repeat: no-repeat;background-position: left;">
+                                <div class="col-lg-12" style="width: 50%; height: 100%;padding:20px;">
+                                    <p style="color: #fff;">
+                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="practice-areas">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"> 
+                    <h2 style="text-align: center;">PRACTICE AREAS</h2>
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 50px;margin-top: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12" style="background-color: #4A4F55;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3" style="background-color: #cca876;">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Banking & Finance</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Intellectual Property</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" style="background-color: #cca876;">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Real Estate</h4>
+                                </div>
+                                <!--<div style="color: #fff; text-align: center;padding: 15px 0px 15px 0px;">
+                                    <p>nenrfnenfre vjf</p>
+                                </div>
+                                <div style="color: #fff; text-align: center;padding: 15px 0px 30px 0px;">
+                                    <span>Read More</span>
+                                </div>-->
+                            </div>
+                            <div class="col-lg-3">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Education</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Aviation</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" style="background-color: #cca876;">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Media</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Insurance</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" style="background-color: #cca876;">
+                                <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
+                                    <h4>Corporate & Commercial</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="attorneys">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>MEET OUR ATTORNEYS</h2>
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 40px;">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 attorney">
+                            <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                            <h3>
+                                Ashely Filcher
+                            </h3>
+                            <h5 style="margin-bottom: 20px">
+                                Lawyer
+                            </h5>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                            <p style="padding: 15px 0px;">
+                                <span style="color: #cca876;">support@vamtam.com</span> </br>
+                                <span>Tel: 800-700-6200</span>
+                            </p>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 attorney">
+                            <img style="width: 100%; height: 200px; border: 0px" src="">
+                            <h3>
+                                Ashely Filcher
+                            </h3>
+                            <h5 style="margin-bottom: 20px">
+                                Lawyer
+                            </h5>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                            <p style="padding: 15px 0px;">
+                                <span style="color: #cca876;">support@vamtam.com</span> </br>
+                                <span>Tel: 800-700-6200</span>
+                            </p>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 attorney">
+                            <img style="width: 100%; height: 200px; border: 0px" src="">
+                            <h3>
+                                Ashely Filcher
+                            </h3>
+                            <h5 style="margin-bottom: 20px">
+                                Lawyer
+                            </h5>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                            <p style="padding: 15px 0px;">
+                                <span style="color: #cca876;">support@vamtam.com</span> </br>
+                                <span>Tel: 800-700-6200</span>
+                            </p>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 attorney">
+                            <img style="width: 100%; height: 200px; border: 0px" src="">
+                            <h3>
+                                Ashely Filcher
+                            </h3>
+                            <h5 style="margin-bottom: 20px">
+                                Lawyer
+                            </h5>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                            <p style="padding: 15px 0px;">
+                                <span style="color: #cca876;">support@vamtam.com</span> </br>
+                                <span>Tel: 800-700-6200</span>
+                            </p>
+                            <div class="seperator1" style="border-top: 1px solid #ededed;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="clients" style="margin-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 style="text-align: center;">OUR CLIENTS</h2>
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 50px;margin-top: 15px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 20px;">
+                <div class="col-lg-2">
+                    <img src="fk.png" style="height: 100px; width: 100px;">
+                </div>
+                <div class="col-lg-2">
+                    <img src="ab.png" style="height: 100px; width: 100px;">
+                </div>
+                <div class="col-lg-2">
+                    <img src="cb.jpg" style="height: 100px; width: 100px;">
+                </div>
+                <div class="col-lg-2">
+                    <img src="kb.png" style="height: 100px; width: 100px;">
+                </div>
+                <div class="col-lg-2">
+                    <img src="pcs.png" style="height: 100px; width: 100px;">
+                </div>
+                <div class="col-lg-2">
+                    <img src="dt.png" style="height: 100px; width: 100px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="free-consultation" style="background-image: url(bg2.jpg); background-attachment: fixed; background-repeat: no-repeat; 
     background-size: cover; background-position: 50% calc(50% - -23px);">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12" style="padding-top: 60px; padding-bottom: 60px; text-align: center;">
+                <div class="col-lg-12" style="padding-top: 60px; padding-bottom: 60px; text-align: center;">
                     <h2>REQUEST A FREE CONSULTATION</h2>
-                    <div class="seperator" style="border-bottom: 1px solid #cca876;display: inline-block;width: 200px; margin-bottom: 30px;margin-top: 10px;"></div>
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 40px;"></div>
                     <p style="font-size: 16px;">Fill out the form below to recieve a free and confidential intial consultation.</p>
                     <form style="margin-top: 30px;">
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-lg-4">
                                 <input style="padding: 17px; outline: none; border: 1px solid #ededed; border-bottom: 1px solid transparent; margin: 0;
                                 font-size: 14px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.1)!important;color: #303030;width: 100%;" type="text" placeholder="Name"/>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-lg-4">
                                 <input style="padding: 17px; outline: none; border: 1px solid #ededed; border-bottom: 1px solid transparent; margin: 0;
                                 font-size: 14px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.1)!important;color: #303030;width: 100%;" type="text" placeholder="Phone"/>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-lg-4">
                                 <input style="padding: 17px; outline: none; border: 1px solid #ededed; border-bottom: 1px solid transparent; margin: 0;
                                 font-size: 14px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.1)!important;color: #303030;width: 100%;" type="text" placeholder="Name"/>
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-xs-12">
+                            <div class="col-lg-12">
                                 <textarea style="padding: 17px; outline: none; border: 1px solid #ededed; border-bottom: 1px solid transparent; margin: 0;
                                 font-size: 14px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.1)!important;color: #303030;width: 100%;" cols="40" rows="5" aria-required="true" aria-invalid="false" placeholder="Case Description..."></textarea>
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-xs-12">
+                            <div class="col-lg-12">
                                 <input type="submit" value="SEND REQUEST →" style="font-size: 14px;font-weight: 400;text-align: center;cursor: pointer;border: 0;
                                 line-height: 1.15em;background: #cca876;color: #fff;padding: 1.3em 2em;"/>
                             </div>
@@ -220,18 +715,17 @@
     </section>
     <section class="footer" style="background-image: url('bg3.jpg');background-repeat: no-repeat; background-size: cover;height: 500px;">
         <div class="overlay" style="background-color: rgba(64,68,73,.8);height: 100%;"></div>
-        
     </section>
-    <section class="copyright" style="height: 80px; background-color: #404449;padding-top: 30px;">
+    <section class="copyright" style="background-color: #404449;padding-top: 30px;">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-lg-4" style="text-align: center;">
                     <p><span style="color: #898989;">© 2020</span> <span style="color: #cca876 ">Sanjeev Chopra & Associates</span> <span style="color: #898989;">by</span> <span style="color: #cca876 ;">TechSopra</span></p>
                 </div>
-                <div class="col-xs-4" style="text-align: center;">
+                <div class="col-lg-4" style="text-align: center;">
                     <p><span style="color: #fff; font-size: 20px;">Sanjeev Chopra & Associates</span></p>
                 </div>
-                <div class="col-xs-4" style="text-align: right;">
+                <div class="col-lg-4" style="text-align: center;">
                     <i class="fa fa-facebook-f" style="color: #cca876;font-size: 22px;margin: 0px 10px;"></i>
                     <i class="fa fa-twitter" style="color: #cca876;font-size: 22px;"></i>
                     <i class="fa fa-linkedin-in" style="color: #cca876;font-size: 22px;"></i>
