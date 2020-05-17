@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Lawyer</title>
 </head>
 <style>
+
+    *{ margin: 0; padding: 0; box-sizing: border-box; }
 
     a:link {
     text-decoration: none;
@@ -122,7 +126,7 @@
     }
 
     .home .content .free-consultation {
-        border: 0.3em solid #cca876;margin-top: 15px;text-align: center;width: 80%;
+        border: 0.3em solid #cca876;margin-top: 15px;text-align: center;
     }
 
     .home .content .free-consultation .btn {
@@ -153,19 +157,27 @@
         text-align: left;
     }
 
+    .attorneys .attorney .content{
+        padding: 20px 10px;
+    }
+
     .aboutus .content ul li{
         padding:20px 0px;
     }
 
     .aboutus .content ul li .text{
         padding: 0px 10px;
-        width: 500px;
     }
 
-    .aboutus .content ul li .text .main{
+    .aboutus .content ul li .heading{
         font-size: 16px;
         font-weight: 700;
         line-height: 26px;
+        padding-left: 10px;
+    }
+
+    .aboutus .content ul li .info{
+        padding-left: 30px;
     }
 
     .aboutus .about-firm{
@@ -175,13 +187,22 @@
     .aboutus .content ul li .bullet{
         border-top: 1px solid #cca876;
         width: 15px;
-        margin-top: 15px;
-        vertical-align: top;
+        vertical-align: middle;
     }
 
     .aboutus .content ul li span{
         display: inline-block;
     }
+
+    .aboutus .caption{  margin-bottom: 20px;padding-left: 10px;font-size: 24px; }
+
+    .clients .client{ margin: 20px 0px; }
+
+    .card1{ background-color: #cca876; }
+    .card3{ background-color: #cca876; }
+    .card6{ background-color: #cca876; }
+    .card8{ background-color: #cca876; }
+    .copyright .copyright-text{ font-size: 12px;}
 
     @media only screen and (max-width: 475px) {
 
@@ -215,12 +236,35 @@
             width: 100%;
         }
 
+        .aboutus .caption{ margin-bottom: 20px; font-size: 20px; text-align: center }
+
+
+        .practice-area-row{ padding: 0px 0px; }
+
+        .card1{ background-color: #4A4F55; }
+        .card2{ background-color: #cca876; }
+        .card3{ background-color: #4A4F55; }
+        .card4{ background-color: #cca876; }
+        .card5{ background-color: #4A4F55; }
+        .card6{ background-color: #cca876; }
+        .card7{ background-color: #4A4F55; }
+        .card8{ background-color: #cca876; }
+
+        .aboutus .content ul li .info{
+            padding-left: 10px;
+        }
+
+        .copyright .copyright-text{ text-align: center ;}
+
+        .contactus .addr { text-align: center; margin-bottom: 40px;}
+
+        .contactus .email { margin-bottom: 0px; }
 	}
 
 </style>
 <body style="-webkit-tap-highlight-color: transparent;padding: 0px;margin: 0px;">
     <section class="header"  style="color: background .3s ease;box-shadow: 0 2px 2px 0 rgba(0,0,0,.04);">
-        <div class="top-header hidden-xs hidden-sm" style="border-bottom: solid 1px #ededed;">
+        <div class="top-header d-none d-lg-block d-md-block" style="border-bottom: solid 1px #ededed;">
             <div class="container">
                 <div class="row" style="padding: 0.6em 0em">
                     <div class="col-xs-12">
@@ -230,7 +274,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-header hidden-xs hidden-sm" >
+        <div class="main-header d-none d-lg-block d-md-block" >
             <div class="container">
                 <div class="row" style="padding: 0.5em 0em">
                     <div class="col-xs-12">
@@ -267,7 +311,7 @@
                 <div style="clear: both;"></div>
     </section>
 
-    
+    <!--
     <section class="achieved-numbers">
         <div class="container">
             <div class="row">
@@ -302,6 +346,8 @@
             </div>
         </div>
     </section>
+    -->
+
 
     <section class="aboutus" style="margin-bottom: 60px; margin-top: 60px;">
         <div class="container">
@@ -313,165 +359,183 @@
                     <h4 style="text-align: center;line-height: 26px;">
                         <span style="color: #cca876; font-size: 700; font-size: 17px;">Sanjeev Chopra & Associates</span> is the preferred choice of the leading companies across india and provides meaningful, long term solutions to companies needing to do more with less in today's challenging environment.
                     </h4>
+               </div>
+            </div>
 
-
-                    
-
-
-                    <div class="row about-firm">
-
-                        <div class="col-lg-6">
-                            <div class="content">
-                                <ul style="list-style: none;padding: 0px;">
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">We advise multinational companies </span> </br>
-                                            <span class="info">To deal with critical legal issues plaguing the industries</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">We are young generation team of dedicated professionals</span>  </br>
-                                            <span class="info">Willing to go extra mile for mission critical deliveries</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">We're business-oriented lawyers</span> </br>
-                                            <span class="info">Equally comfortable in the boardroom and the courtroom</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row" style="background-image: url(india.jpg);height: 250px;background-size: cover;">
-                                <div class="col-lg-12" style="background-color: rgba(0,0,0,.4);width: 50%; height: 100%;padding: 40px 20px;">
-                                    <p style="color: #fff;">
-                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;">Our Services Extend Across India </br></span> 
-                                        <span style="display: block;color:#cca876; font-size: 17px;">Sanjeev Chopra & Associate </br></span>
-                                        <span style="font-size: 16px;">Strategic Legal Counsel </br></span>
-                                        <span style="font-size: 16px;">Law Firm</span>
-                                    </p>
+            <div class="row about-firm">
+                <div class="col-lg-6">
+                    <div class="content">
+                        <ul style="list-style: none;padding: 0px;">
+                            <li>
+                                <div>
+                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                    <span class="heading">We Advise Multinational Companies </span>
                                 </div>
-                            </div>
-                        </div>
+                                <div>
+                                    <span class="info">To deal with critical legal issues plaguing the industries</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                    <span class="heading">Dedicated Professionals</span>
+                                </div>
+                                <div>
+                                    <span class="info">We are young generation team of dedicated professionals who are willing to go extra mile for mission critical deliveries</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                    <span class="heading">Business Oriented Lawyers</span>
+                                </div>
+                                <div>
+                                    <span class="info">We are equally comfortable in the boardroom and the courtroom</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-
+                </div>
+                <div class="col-lg-6">
+                    <div class="row" style="background-image: url(india.jpg);background-size: cover;">
+                        <div class="col-lg-6" style="background-color: rgba(0,0,0,.4);width: 50%; height: 100%;padding: 40px 20px;">
+                            
+                            <p style="color: #fff;">
+                                <span style="display: block;font-size: 24px;margin-bottom: 30px;">Our Services Extend Across India </br></span> 
+                                <span style="display: block;color:#cca876; font-size: 17px;">Sanjeev Chopra & Associates </br></span>
+                                <span style="font-size: 16px;">(Strategic Legal Counsel) </br></span>
+                                <span style="font-size: 16px;padding-top: 10px;display: inline-block;">A Law Firm</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
                     
 
                     <div class="row supporting-business"  style="margin-top: 60px;">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="caption" style="margin-bottom: 20px; padding-left: 20px; font-size: 20px;">Supporting Your Business</div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="caption">We Support Your Business</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row" style="background-image: url(business.jpg);height: 320px;background-size: cover;background-repeat: no-repeat;background-position: left;">
-                                <div class="col-lg-12" style="width: 50%; height: 100%;padding:20px;">
-                                    <p style="color: #fff;">
-                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
-                                        
-                                    </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div style="background-image: url(business.jpg);height: 100%;background-size: cover;background-repeat: no-repeat;background-position: left;">
+                                        <div style="width: 50%; height: 100%;padding:20px;">
+                                            <p style="color: #fff;">
+                                                <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content" style="background-color: rgba(0,0,0,0.1);padding-left: 30px; padding: 30px 30px">
+                                        <ul style="list-style: none;padding: 0px;">
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Our Approach</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">Our balanced approach to legal matters enables our clients to realize performance and savings gains at levels traditionally not possible with captive units, consultancies or outsourcing companies.</span>
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Our Proven Methodology</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">Our proven
+                                                        methodology enables us to understand your legal and
+                                                        business needs and design solutions that drive
+                                                        efficiency and effectiveness with results.</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6" style="background-color: rgba(0,0,0,0.1);padding-left: 30px;">
-                            <div class="content" style="padding: 30px 0px">
-                                <ul style="list-style: none;padding: 0px;">
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Our Approach </span> </br>
-                                            <span class="info">Our balanced approach to legal matters enables our clients to realize performance and savings gains at levels traditionally not possible with captive units, consultancies or outsourcing companies.</span>
-                                        </span>
-                                    </li>
-                                    
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Our proven
-                                                methodology  </span> </br>
-                                            <span class="info">Our proven
-                                                methodology enables us to understand your legal and
-                                                business needs and design solutions that drive
-                                                efficiency and effectiveness with results. </span> 
-                                               
-                                        </span>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        
                     </div>
 
                     <div class="row choose-us" style="margin-top: 60px">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="caption" style="margin-bottom: 20px; padding-left: 20px; font-size: 20px;">Work With Us</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6" style="background-color: rgba(0,0,0,0.1);;padding-left: 30px;">
-                            <div class="content" style="padding: 30px 0px">
-                                <ul style="list-style: none;padding: 0px;">
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Experienced and seasoned Lawyers</span> </br>
-                                            <span class="info">Across the country</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Innovative solution </span>  </br>
-                                            <span class="info">For routine legal
-                                                and business issues</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">In-depth and holistic analysis </span> </br>
-                                                <span class="info">Of complex
-                                                    issues</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Significant investment</span></br>
-                                                <span class="info">In research,
-                                                    technology and CRM</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bullet  hidden-xs hidden-sm"></span>
-                                        <span class="text">
-                                            <span class="main">Management
-                                                team</span></br>
-                                            <span class="info"> Domain centeric and proven</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="row" style="background-image: url(differentiator.jpg);height: 500px;background-size: cover;background-repeat: no-repeat;background-position: left;">
-                                <div class="col-lg-12" style="width: 50%; height: 100%;padding:20px;">
-                                    <p style="color: #fff;">
-                                        <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
-                                        
-                                    </p>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="caption">Why Choose Us</div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div style="background-image: url(differentiator.jpg);height: 100%;background-size: cover;background-repeat: no-repeat;background-position: left;">
+                                        <div style="width: 50%; height: 100%;padding:20px;">
+                                            <p style="color: #fff;">
+                                                <span style="display: block;font-size: 24px;margin-bottom: 30px;"></br></span> 
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content" style="background-color: rgba(0,0,0,0.1);padding: 30px 30px">
+                                        <ul style="list-style: none;padding: 0px;">
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Experienced And Seasoned Lawyers</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">Across the country</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Innovative Solutions</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">For routine legal and business issues</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">In-depth and Holistic Analysis</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">For routine legal and business issues</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Significant Investment</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">In research, technology and CRM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="bullet d-none d-lg-inline-block d-md-inline-block"></span>
+                                                    <span class="heading">Management Team</span>
+                                                </div>
+                                                <div>
+                                                    <span class="info">Domain centeric and proven</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+            
+                                
+                            </div>
                         </div>
-                        
                     </div>
                     
                 </div>
@@ -492,19 +556,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12" style="background-color: #4A4F55;">
-                    <div class="container">
+                    <div class="container practice-area-row">
                         <div class="row">
-                            <div class="col-lg-3" style="background-color: #cca876;">
+                            <div class="col-lg-3 card1">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Banking & Finance</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 card2">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Intellectual Property</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-3" style="background-color: #cca876;">
+                            <div class="col-lg-3 card3">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Real Estate</h4>
                                 </div>
@@ -515,7 +579,7 @@
                                     <span>Read More</span>
                                 </div>-->
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 card4">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Education</h4>
                                 </div>
@@ -523,28 +587,27 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 card5">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Aviation</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-3" style="background-color: #cca876;">
+                            <div class="col-lg-3 card6">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Media</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 card7">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Insurance</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-3" style="background-color: #cca876;">
+                            <div class="col-lg-3 card8">
                                 <div style="color: #fff; text-align: center;padding: 30px 0px 30px 0px;">
                                     <h4>Corporate & Commercial</h4>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -553,83 +616,70 @@
 
     <section class="attorneys">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>MEET OUR ATTORNEYS</h2>
-                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 40px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 style="text-align: center;">OUR ATTORNEYS</h2>
+                        <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 40px;">
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 attorney">
-                            <img style="width: 100%; height: 200px; border: 0px;" src="" >
-                            <h3>
-                                Ashely Filcher
-                            </h3>
-                            <h5 style="margin-bottom: 20px">
-                                Lawyer
-                            </h5>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
-                            <p style="padding: 15px 0px;">
-                                <span style="color: #cca876;">support@vamtam.com</span> </br>
-                                <span>Tel: 800-700-6200</span>
-                            </p>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
-                        </div>
+                </div>
+                <div class="row">
 
-                        <div class="col-lg-3 attorney">
-                            <img style="width: 100%; height: 200px; border: 0px" src="">
-                            <h3>
-                                Ashely Filcher
-                            </h3>
-                            <h5 style="margin-bottom: 20px">
-                                Lawyer
+                    <div class="col-lg-3 attorney">
+                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                        <div class="content">
+                            <h5>
+                                Adv. Sanjeev Chopra
                             </h5>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
-                            <p style="padding: 15px 0px;">
-                                <span style="color: #cca876;">support@vamtam.com</span> </br>
-                                <span>Tel: 800-700-6200</span>
-                            </p>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
+                            <h6>
+                                Lawyer
+                            </h6>
                         </div>
+                        <div class="seperator1" style="border-top: 1px solid #ededed;">
+                        </div>
+                    </div>
 
-                        <div class="col-lg-3 attorney">
-                            <img style="width: 100%; height: 200px; border: 0px" src="">
-                            <h3>
-                                Ashely Filcher
-                            </h3>
-                            <h5 style="margin-bottom: 20px">
-                                Lawyer
+                    <div class="col-lg-3 attorney">
+                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                        <div class="content">
+                            <h5>
+                                Adv. Rajneesh Kapoor
                             </h5>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
-                            <p style="padding: 15px 0px;">
-                                <span style="color: #cca876;">support@vamtam.com</span> </br>
-                                <span>Tel: 800-700-6200</span>
-                            </p>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
+                            <h6>
+                                Lawyer
+                            </h6>
                         </div>
+                        <div class="seperator1" style="border-top: 1px solid #ededed;">
+                        </div>
+                    </div>
 
-                        <div class="col-lg-3 attorney">
-                            <img style="width: 100%; height: 200px; border: 0px" src="">
-                            <h3>
-                                Ashely Filcher
-                            </h3>
-                            <h5 style="margin-bottom: 20px">
-                                Lawyer
+                    <div class="col-lg-3 attorney">
+                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                        <div class="content">
+                            <h5>
+                                Adv. Shiv Singh Ravat
                             </h5>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
-                            <p style="padding: 15px 0px;">
-                                <span style="color: #cca876;">support@vamtam.com</span> </br>
-                                <span>Tel: 800-700-6200</span>
-                            </p>
-                            <div class="seperator1" style="border-top: 1px solid #ededed;">
-                            </div>
+                            <h6>
+                                Lawyer
+                            </h6>
                         </div>
+                        <div class="seperator1" style="border-top: 1px solid #ededed;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 attorney">
+                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                        <div class="content">
+                            <h5>
+                                Adv. Surendra Mishra
+                            </h5>
+                            <h6>
+                                Lawyer
+                            </h6>
+                        </div>
+                        <div class="seperator1" style="border-top: 1px solid #ededed;">
+                        </div>
+                    </div>
                         
                     </div>
                 </div>
@@ -645,27 +695,27 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 style="text-align: center;">OUR CLIENTS</h2>
-                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 50px;margin-top: 15px;">
+                    <div class="seperator" style="border-top: 1px solid #ededed; position: relative;margin-bottom: 20px;margin-top: 15px;">
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-left: 20px;">
-                <div class="col-lg-2">
+            <div class="row" style="text-align: center;">
+                <div class="col-lg-2 client">
                     <img src="fk.png" style="height: 100px; width: 100px;">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2  client">
                     <img src="ab.png" style="height: 100px; width: 100px;">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 client">
                     <img src="cb.jpg" style="height: 100px; width: 100px;">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 client">
                     <img src="kb.png" style="height: 100px; width: 100px;">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 client">
                     <img src="pcs.png" style="height: 100px; width: 100px;">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 client">
                     <img src="dt.png" style="height: 100px; width: 100px;">
                 </div>
             </div>
@@ -713,22 +763,72 @@
             </div>
         </div>
     </section>
-    <section class="footer" style="background-image: url('bg3.jpg');background-repeat: no-repeat; background-size: cover;height: 500px;">
-        <div class="overlay" style="background-color: rgba(64,68,73,.8);height: 100%;"></div>
+    <section class="contactus" style="background-image: url('bg3.jpg');background-repeat: no-repeat; background-size: cover;">
+        <div class="overlay" style="background-color: rgba(0,0,0,.7);height: 100%;">
+            <div class="container">
+                <div class="row" style="padding:80px 0px">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 addr">
+                                <div style="color: #fff;font-size: 18px;margin-bottom: 20px;">West Delhi</div>
+                                <div style="color: #d8d8d8;font-size: 12px; line-height: 20px;">
+                                    G-51/203, </br>
+                                    Sector-6 Pocket-1,</br>
+                                    Dwarka,</br>
+                                    New Delhi - 110075</br>
+                                </div>
+                               
+                            </div>
+
+                            <div class="col-lg-6 addr">
+                                <div style="color: #fff;font-size: 18px;margin-bottom: 20px;">East Delhi</div>
+                                <div style="color: #d8d8d8;font-size: 12px; line-height: 20px;">
+                                    Chamber E-509, </br>
+                                    Karkardooma Courts Complex,</br>
+                                    Delhi - 110032</br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6">
+                        <div class="d-none d-lg-block d-md-block" style="margin-bottom: 60px">
+                            <a style="font-size:22px !important;color:#CCA876;border: 1px solid #fff;cursor: pointer;text-align: center;
+                            vertical-align: middle;text-shadow: none;padding: .55em 1.7em;line-height: 1.15em;">
+                            <i class="far fa-comments" style="margin-right: 10px;"></i>
+                            <span style="color: #fff;">REQUEST A FREE CONSULTATION  →</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 addr">
+                                <div style="color: #fff;font-size: 18px;">Mobile No</div>
+                                <div style="color: #d8d8d8;font-size: 12px; line-height: 20px;">9711142200, 9999858445</div>
+                            </div>
+                            <div class="col-lg-6 addr email">
+                                <div style="color: #fff;font-size: 18px;">Email</div>
+                                <div style="color: #d8d8d8;font-size: 12px;line-height: 20px;color: #cca876;">chopra6791@gmail.com</div>
+                            </div>
+                        </div>
+                                
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="copyright" style="background-color: #404449;padding-top: 30px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4" style="text-align: center;">
+                <div class="col-lg-4 copyright-text">
                     <p><span style="color: #898989;">© 2020</span> <span style="color: #cca876 ">Sanjeev Chopra & Associates</span> <span style="color: #898989;">by</span> <span style="color: #cca876 ;">TechSopra</span></p>
                 </div>
                 <div class="col-lg-4" style="text-align: center;">
-                    <p><span style="color: #fff; font-size: 20px;">Sanjeev Chopra & Associates</span></p>
+                    <p><span style="color: #fff; font-size: 18px;">Sanjeev Chopra & Associates</span></p>
                 </div>
-                <div class="col-lg-4" style="text-align: center;">
-                    <i class="fa fa-facebook-f" style="color: #cca876;font-size: 22px;margin: 0px 10px;"></i>
-                    <i class="fa fa-twitter" style="color: #cca876;font-size: 22px;"></i>
-                    <i class="fa fa-linkedin-in" style="color: #cca876;font-size: 22px;"></i>
+                <div class="col-lg-4" style="text-align: center; margin-bottom:40px">
+                    <i class="fab fa-facebook-f" style="color: #cca876;font-size: 22px;margin: 0px 10px;"></i>
+                    <i class="fab fa-twitter" style="color: #cca876;font-size: 22px;margin: 0px 10px;"></i>
+                    <i class="fab fa-linkedin-in" style="color: #cca876;font-size: 22px;margin: 0px 10px;"></i>
                 </div>
             </div>
         </div>
