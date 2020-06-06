@@ -38,9 +38,9 @@
 
     .main-menu li a{
         color:#2c2c2c;
-        padding: 1.2em 0em 1.2em 4em;
+        padding: 1.2em 0em 0em 2em;
         display: inline-block;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .main-menu li a:hover{
@@ -114,15 +114,15 @@
     }
 
     .home .content{
-        height:200px;position: relative;top:250px; width: 330px;margin: auto;
+        position: relative;top:200px; width: 400px; margin: auto;
     }
 
     .home .content .heading {
-        color:#cca876; font-size: 24px;
+        color:#cca876; font-size: 32px;
     }
 
     .home .content .subheading{
-        color:#fff; font-size: 36px; font-weight: 700; display: inline-block;margin-top: 10px;
+        color:#fff; font-size: 42px; font-weight: 700; display: inline-block;margin-top: 10px;
     }
 
     .home .content .free-consultation {
@@ -130,7 +130,7 @@
     }
 
     .home .content .free-consultation .btn {
-        display: inline-block;padding: 1em 1em;color:#cca876;
+        display: inline-block;padding: 1em 1em;color:#cca876; font-size: 22px;;
     }
 
     .achieved-numbers ul{
@@ -207,6 +207,7 @@
     .card6{ background-color: #cca876; }
     .card8{ background-color: #cca876; }
     .copyright .copyright-text{ font-size: 12px;}
+    .main-header .logo {float: left;}
 
     @media only screen and (max-width: 475px) {
 
@@ -258,11 +259,22 @@
             padding-left: 10px;
         }
 
+
         .copyright .copyright-text{ text-align: center ;}
 
         .contactus .addr { text-align: center; margin-bottom: 40px;}
 
         .contactus .email { margin-bottom: 0px; }
+
+        .main-header .logo {margin-left: 20px; display: block;}
+
+        .main-header {position: fixed; background-color: #FFF; width: 100%; height: 120px; z-index: 999;}
+
+        .home .content{top:150px}
+
+        .header {height: 120px;}
+
+        .home .content .free-consultation{ margin-top: 35px; }
 	}
 
 </style>
@@ -271,19 +283,21 @@
         <div class="top-header d-none d-lg-block d-md-block" style="border-bottom: solid 1px #ededed;">
             <div class="container">
                 <div class="row" style="padding: 0.6em 0em">
-                    <div class="col-xs-12">
-                        <div style="float:left"><span style="color: #cbc9c9; font-size: 12px;">CALL US:</span> <span style="color: #cca876;">+91 9582582392</span></div>
-                        <div style="float:right"><span style="color: #cca876; font-size: 12px">REQUEST A FREE CONSULTATION</span></div>
+                    <div class="col-lg-6">
+                        <span style="color: #cbc9c9; font-size: 12px;">CALL US:</span> <span style="color: #cca876;">+91 9582582392</span>
+                    </div>
+                    <div class="col-lg-6" style="text-align: right;">
+                        <span style="color: #cca876; font-size: 12px">REQUEST A FREE CONSULTATION</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-header d-none d-lg-block d-md-block" >
+        <div class="main-header" >
             <div class="container">
-                <div class="row" style="padding: 0.5em 0em">
+                <div class="row" style="padding: 1.5em 0em">
                     <div class="col-xs-12">
-                        <div class="logo" style="float:left"></div>
-                        <div class="main-menu" style="float:right">
+                        <div class="logo" style="float:left"><img src="logo3.4.png" style="width: 300px; height: 70px;"/></div>
+                        <div class="main-menu d-none d-lg-block d-md-block" style="float:right;margin-left: 150px;">
                             <ul style="list-style: none;">
                                 <li><a href="">Home</a></li>
                                 <li><a href="">About Us</a></li>
@@ -303,8 +317,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="content">
-                                <span class="heading">WITH </br> Sanjeev Chopra & Associates</span></br>
-                                <span class="subheading">EVERY CLIENT MATTERS</span> 
+                                <span class="heading">WITH Sanjeev Chopra & Associates</span></br>
+                                <span class="subheading">EVERY CLIENT </br>MATTERS</span> 
                                 <div class="free-consultation">
                                     <span class="btn">REQUEST A FREE CONSULTATION</span>
                                 </div>
@@ -627,8 +641,8 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-3 attorney">
-                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                    <div class="col-lg-4 attorney">
+                        <img style="width: 100%; height:350px; border: 0px;" src="advsc.jpg" >
                         <div class="content">
                             <h5>
                                 Adv. Sanjeev Chopra
@@ -641,11 +655,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 attorney">
-                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                    <div class="col-lg-4 attorney">
+                        <img style="width: 100%; height:350px; border: 0px;" src="advjpb.jpg" >
                         <div class="content">
                             <h5>
-                                Adv. Rajneesh Kapoor
+                                Adv. J.P. Bhan Kapoor
                             </h5>
                             <h6>
                                 Lawyer
@@ -655,25 +669,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 attorney">
-                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
+                    <div class="col-lg-4 attorney">
+                        <img style="width: 100%; height:350px; border: 0px;" src="advsarvendrasinghpal.jpg" >
                         <div class="content">
                             <h5>
-                                Adv. Shiv Singh Ravat
-                            </h5>
-                            <h6>
-                                Lawyer
-                            </h6>
-                        </div>
-                        <div class="seperator1" style="border-top: 1px solid #ededed;">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 attorney">
-                        <img style="width: 100%; height: 200px; border: 0px;" src="" >
-                        <div class="content">
-                            <h5>
-                                Adv. Surendra Mishra
+                                Adv. S.S. Pal
                             </h5>
                             <h6>
                                 Lawyer
