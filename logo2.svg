@@ -13,7 +13,10 @@
    version="1.1"
    viewBox="0 0 210 297"
    height="297mm"
-   width="210mm">
+   width="210mm"
+   inkscape:export-filename="D:\Projects\other\lawyer\images\logo1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -229,8 +232,8 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
-     inkscape:snap-bbox="true"
-     inkscape:snap-global="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-global="false"
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="-8"
@@ -239,10 +242,10 @@
      showborder="false"
      showgrid="false"
      inkscape:document-rotation="0"
-     inkscape:current-layer="g1313"
+     inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="1357.5444"
-     inkscape:cx="-3196.4119"
+     inkscape:cy="1149.7877"
+     inkscape:cx="-2086.5199"
      inkscape:zoom="0.0875"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -258,7 +261,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -270,32 +273,71 @@
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
        inkscape:export-filename="C:\Users\sumit\logo1.png"
-       ry="55.395084"
-       y="0.89874256"
-       x="-1695.0293"
-       height="295.1651"
-       width="560.07117"
+       ry="42.731373"
+       y="-558.65881"
+       x="-1256.6003"
+       height="227.68825"
+       width="345.42761"
        id="rect1281"
-       style="fill:#ffffff;stroke:#c8ab37;stroke-width:7.3152;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#ffffff;stroke:#00aad4;stroke-width:5.04569;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1,-1)" />
     <g
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="C:\Users\sumit\logo1.png"
+       inkscape:export-filename="D:\Projects\other\lawyer\images\logo2.png"
        id="g1313"
-       transform="translate(-2259.9827,193.33672)"
-       style="fill:#c8ab37">
+       transform="matrix(0.59740577,0,0,0.73033178,-1668.8189,-74.271273)"
+       style="fill:#00aad4;fill-opacity:0.826613;stroke:#00aad4">
       <g
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         transform="translate(1847.1502,-10.968618)"
+         transform="translate(592.26875,-68.420996)"
          id="g1311"
-         style="fill:#c8ab37">
+         style="fill:#00aad4;fill-opacity:0.826613;stroke:#00aad4">
         <path
            transform="matrix(0.26458333,0,0,0.26458333,889.63253,-227.46414)"
            d="m -3109.7012,461.40234 v 0.56446 c -122.5515,1.01708 -261.9897,72.19158 -262.6953,182.5625 v 0 105.71484 86.57031 h 1.0586 c -0.1295,110.58885 -9.3014,196.33965 158.5039,204.07225 h 652.7324 c 30.745,17.1331 59.0732,57.2711 54.4493,103.7129 h 1.0097 c 3.4153,37.774 -24.0216,70.2926 -53.9746,84.5723 h -479.8008 c -33.224,-17.1331 -63.8367,-57.2731 -58.8398,-103.7149 h -254.2168 v 105.7149 h 0.289 c 0.09,110.2169 7.9454,170.1202 72.1934,199.9258 37.336,8.0769 165.1738,4.0371 165.1738,4.0371 v 0.1074 h 690.6856 c 162.5009,-7.7326 153.6176,-93.4815 153.4922,-204.0703 h 0.039 v -88.5723 h -0.8007 v -103.7129 0 c -0.087,-110.27536 -7.7401,-170.20993 -70.3183,-200.03123 -36.3655,-8.0812 -160.8789,-4.04102 -160.8789,-4.04102 h -566.9121 c -31.4934,-14.27956 -60.3429,-46.79613 -56.752,-84.57031 h 0.2188 c -0.038,-0.36332 -0.068,-0.72535 -0.1016,-1.08789 0.034,-0.30403 0.064,-0.60743 0.1016,-0.91211 h -0.1875 c -3.7728,-45.07387 24.9121,-83.93166 56.3515,-101.12695 h 500.2559 c 31.0176,17.4489 59.2773,57.20516 54.6035,103.12695 h 240.4766 v -103.71484 -2 h -0.02 c -0.6074,-110.26742 -119.8028,-181.41285 -224.6992,-182.55664 v -0.57032 z m 838.4043,0 c 46.8972,31.86292 80.3004,79.17801 80.6211,137.41211 v 2 46.30274 h 447.7754 c 31.0178,17.4489 59.2793,57.20515 54.6055,103.12695 h 240.4765 v -103.71484 -2 h -0.039 c -0.6078,-110.2674 -119.803,-181.41285 -224.6992,-182.55664 v -0.57032 z m 588.7617,645.53906 c 4.6742,52.1952 -23.5856,97.3823 -54.6035,117.2148 h -447.7773 v 11.6602 c 0,18.2295 0.2683,35.7886 0,52.4551 v 24.9629 h -0.9551 c -3.8305,58.4429 -20.7865,102.7181 -92.3359,120.5781 v 1.4297 h 611.4121 v -0.6484 c 104.8966,-1.3001 224.0914,-82.1643 224.6992,-207.4961 h 0.037 v -2.2735 -117.8828 z"
-           style="fill:#c8ab37;stroke:#c8ab37;stroke-width:0"
+           style="fill:#00aad4;fill-opacity:0.826613;stroke:#00aad4;stroke-width:0"
            id="path1285" />
       </g>
+    </g>
+    <g
+       transform="translate(7.6351208,36.058946)"
+       id="g903">
+      <text
+         xml:space="preserve"
+         style="font-size:64.9566px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:-0.00902176px;word-spacing:0px;stroke-width:0.451087"
+         x="-1039.4604"
+         y="-123.82463"
+         id="text887"
+         transform="scale(0.93768604,1.066455)"><tspan
+           sodipodi:role="line"
+           id="tspan885"
+           x="-1039.4604"
+           y="-123.82463"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Bold';stroke-width:0.451087">Sanjeev Chopra</tspan><tspan
+           sodipodi:role="line"
+           x="-1039.4604"
+           y="-123.19029"
+           style="stroke-width:0.451087"
+           id="tspan889" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:63.0707px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:-0.00875982px;word-spacing:0px;stroke-width:0.43799"
+         x="-992.06335"
+         y="-52.425381"
+         id="text893"
+         transform="scale(0.98290958,1.0173876)"><tspan
+           sodipodi:role="line"
+           id="tspan891"
+           x="-992.06335"
+           y="-52.425381"
+           style="stroke-width:0.43799" /><tspan
+           sodipodi:role="line"
+           x="-992.06335"
+           y="-52.425381"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Bold';stroke-width:0.43799"
+           id="tspan895">&amp; Associates</tspan></text>
     </g>
   </g>
 </svg>
