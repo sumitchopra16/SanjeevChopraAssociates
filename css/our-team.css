@@ -1,7 +1,7 @@
 
 section.our-team { padding: 60px 0px; background-color: #f6f9fe;}
 
-section.our-team .header {text-align: center; width: 50%; margin: auto; padding-bottom: 30px;}
+section.our-team .header {text-align: center; margin: auto; padding-bottom: 30px;}
 
 section.our-team .header h2 {text-align: center; font-size: 32px; font-family: 'Roboto', sans-serif; color: #444444;}
 
@@ -21,4 +21,8 @@ section.our-team .member .member-img img { height: 255px; width: 100%;  }
 section.our-team .member .member-info { padding: 25px 15px;  }
    
 section.our-team .member .member-info h4 { font-weight: 700; margin-bottom: 5px; font-size: 18px; color: #222222; }   
+
+@media only screen and (min-width: 768px) {
+    section.our-team .header {text-align: center; width: 50%; margin: auto; padding-bottom: 30px;}
+}
     
