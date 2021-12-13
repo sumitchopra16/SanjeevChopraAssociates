@@ -1,4 +1,4 @@
-    section.aboutus { padding: 60px 0px;}
+    section.aboutus { padding: 40px 0px;}
 
     .aboutus .about-firm .content {
         padding-bottom: 30px;
@@ -31,7 +31,7 @@
 
     .aboutus .choose-us .content ul { background-color:#f6f9fe; padding: 30px 30px; list-style: none; margin-bottom: 0px; }
 
-    .aboutus .choose-us .choose-us-image-holder { background-image: url(../images/differentiator.jpg);height: 100%;background-size: 
+    .aboutus .choose-us .choose-us-image-holder { background-image: url(../images/why-choose-us.jpg);height: 100%;background-size: 
         cover;background-repeat: no-repeat;background-position: left; height: 490px; }
     
     @media only screen and (min-width: 768px) {
